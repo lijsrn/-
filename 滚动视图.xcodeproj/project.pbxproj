@@ -13,6 +13,8 @@
 		E9F21C8C22169CA00026D9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F21C8B22169CA00026D9DD /* Assets.xcassets */; };
 		E9F21C8F22169CA00026D9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F21C8D22169CA00026D9DD /* LaunchScreen.storyboard */; };
 		E9F21C9222169CA00026D9DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21C9122169CA00026D9DD /* main.m */; };
+		E9F21C9B22169DD40026D9DD /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21C9A22169DD40026D9DD /* CustomScrollView.m */; };
+		E9F21C9E22169EAC0026D9DD /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21C9D22169EAC0026D9DD /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E9F21C8E22169CA00026D9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F21C9022169CA00026D9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F21C9122169CA00026D9DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9F21C9922169DD40026D9DD /* CustomScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		E9F21C9A22169DD40026D9DD /* CustomScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		E9F21C9C22169EAC0026D9DD /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		E9F21C9D22169EAC0026D9DD /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,13 @@
 		E9F21C8122169C9E0026D9DD /* 滚动视图 */ = {
 			isa = PBXGroup;
 			children = (
+				E9F21C9822169CA90026D9DD /* View */,
 				E9F21C8222169C9E0026D9DD /* AppDelegate.h */,
 				E9F21C8322169C9E0026D9DD /* AppDelegate.m */,
 				E9F21C8522169C9E0026D9DD /* ViewController.h */,
 				E9F21C8622169C9E0026D9DD /* ViewController.m */,
+				E9F21C9C22169EAC0026D9DD /* ScrollViewController.h */,
+				E9F21C9D22169EAC0026D9DD /* ScrollViewController.m */,
 				E9F21C8822169C9E0026D9DD /* Main.storyboard */,
 				E9F21C8B22169CA00026D9DD /* Assets.xcassets */,
 				E9F21C8D22169CA00026D9DD /* LaunchScreen.storyboard */,
@@ -69,6 +78,15 @@
 				E9F21C9122169CA00026D9DD /* main.m */,
 			);
 			path = "滚动视图";
+			sourceTree = "<group>";
+		};
+		E9F21C9822169CA90026D9DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9F21C9922169DD40026D9DD /* CustomScrollView.h */,
+				E9F21C9A22169DD40026D9DD /* CustomScrollView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F21C9E22169EAC0026D9DD /* ScrollViewController.m in Sources */,
 				E9F21C8722169C9E0026D9DD /* ViewController.m in Sources */,
 				E9F21C9222169CA00026D9DD /* main.m in Sources */,
+				E9F21C9B22169DD40026D9DD /* CustomScrollView.m in Sources */,
 				E9F21C8422169C9E0026D9DD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

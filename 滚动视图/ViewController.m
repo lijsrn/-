@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ScrollViewController.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"点击" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor grayColor]];
+    button.frame = CGRectMake(100.f, 100.f, 100.f, 100.f);
+    [button addTarget:self action:@selector(btn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
+-(void)btn{
+    ScrollViewController *vc = [ScrollViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
